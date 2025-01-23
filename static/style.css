@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#calendar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.month {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+    background: #fff;
+}
+
+.day {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    line-height: 40px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.day:hover {
+    background-color: #ddd;
+}
+
+/* Mood colors */
+.happy { background-color: violet !important; }
+.sad { background-color: yellow !important; }
+.normal { background-color: olive !important; }
+
+/* Period tracking */
+.period { background-color: red !important; }
+
+/* Prayer tracking */
+.on-time { color: green; }
+.late { color: orange; }
+.skipped { color: red; }
